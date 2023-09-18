@@ -1,0 +1,9 @@
+* Note on this project
+
+** Commands that break compilation with xelatex
+
+*** In bsuir-std.cls
+
+#+BEGIN_SRC: xelatex
+%% \renewcommand{\normalsize}{\fontsize{14pt}\selectfont}
+#+END_SRC
