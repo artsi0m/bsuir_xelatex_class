@@ -1,9 +1,18 @@
 * Note on this project
 
-** Commands that break compilation with xelatex
+** texlive PATH on windows
+#+BEGIN_SRC: cmd
+C:\texlive\2023\bin\windows
+#+END_SRC
+
+** Commands that break compilation with xelatex or give warnings
 
 *** In bsuir-std.cls
 
 #+BEGIN_SRC: xelatex
 %% \renewcommand{\normalsize}{\fontsize{14pt}\selectfont}
 #+END_SRC
+
+*** box255 
+
+https://tex.stackexchange.com/questions/587767/error-output-routine-didnt-use-all-of-box255-using-eskdx
