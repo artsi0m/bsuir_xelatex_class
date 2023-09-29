@@ -1,10 +1,14 @@
 * Note on this project
-
-** texlive PATH on windows
+** PATH's
+*** texlive PATH on windows
 #+BEGIN_SRC: cmd
 C:\texlive\2023\bin\windows
 #+END_SRC
 
+*** path to miktex eskdx on windows
+#+BEGIN_SRC: cmd
+C:\Users\artsi0m\scoop\apps\miktex\23.9\texmfs\install\tex\latex\eskdx
+#+END_SRC
 ** Commands that break compilation with xelatex or give warnings
 
 *** In bsuir-std.cls

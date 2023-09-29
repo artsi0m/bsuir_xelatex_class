@@ -6,14 +6,21 @@
 
 \documentclass[a4paper,emptystyle]{bsuir-std}
 \usepackage{lipsum}
-\usepackage{lastpageo}
+\usepackage{lastpage}
 \setmainfont{Times New Roman}
-\ESKDdepartment{Министество образования Республики Беларусь}
-\ESKDcompany{Учреждение Образования
-  \newline БЕЛОРУССКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИНФОРМАТИКИ И РАДИОЭЛЕКТРОНИКИ }
+\ESKDcolumnI{ \center{ {\normalfont Министество образования Республики Беларусь }}}
+\ESKDcolumnII{ \center{{\normalfont Учреждение Образования} }}
+\ESKDcolumnIII{ \center{\normalfont{БЕЛОРУССКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИНФОРМАТИКИ И РАДИОЭЛЕКТРОНИКИ }}}
 
 \begin{document}
-\maketitle
+\ESKDtheColumnI
+
+\ESKDtheColumnII
+
+\ESKDtheColumnIII
+\newline
+Факультет компьютерного проектирования \\
+Кафедра проектирования информационно компьютерных систем
 \newpage
 \lipsum[1]
 
