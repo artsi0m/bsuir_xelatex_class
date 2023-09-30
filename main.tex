@@ -4,38 +4,21 @@
 %%% TeX-engine: xetex
 %%% End:
 
+% main.tex файл который компилируется и подключает за собой остальный
+% файлы с содержимым через input
 \documentclass[a4paper,emptystyle]{bsuir-std}
 \usepackage{lipsum}
 \usepackage{lastpage}
 \setmainfont{Times New Roman}
 \begin{document}
-\begin{titlepage}
-\begin{center}
-Министерство образования Республики Беларусь\\[1.2em]
-Учреждение образования\\[0.4em]
-БЕЛОРУССКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИНФОРМАТИКИ И РАДИОЭЛЕКТРОНИКИ\\[2.0em]
-\end{center}
-Факультет компьютерного проектирования\\
-Кафедра проектирования информационно-компьютерных систем
 
-\begin{flushright}
-  \begin{minipage}{0.5\textwidth}
-    \textit{К защите допустить:}\\
-    Руководитель курсового проекта\\
-    Доцент, к.т.н.\\
-    \underline{\hspace*{2.8cm}} Г.\,А.~Пискун
-  \end{minipage}\\[2em]
-\end{flushright}
+%%% Титульник
+\input{title}
 
-\begin{center}
-  \textbf{ПОЯСНИТЕЛЬНАЯ ЗАПИСКА}\\
-  к курсовому проекту\\
-  на тему\\[2.0em]
 
-  \textbf{БЕСПРОВОДНОЙ РОУТЕР АССИМЕТРИЧНОЙ ЦИФРОВОЙ АБОНЕНТСКОЙ ЛИНИИ}\\
-\end{center}
-\end{titlepage}
-Несколько слов во введение.
+%%% Введение.
+\input{introduction}
+
 \section{lipsum}
 \subsection{lorem ipsum}
 \subsubsection{lorem ipsum dolor sit amet}
