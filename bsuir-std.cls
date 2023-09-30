@@ -26,6 +26,10 @@
 
 % Добавляем polyglossia, с ним же добавиться fontspec и можем
 % использовать шрифт Times New Roman в XeLaTeX
+% При том одним только fontspec не обойтись, потому что в
+% polyglossia ещё команда setdefaultlanguage, которая позволяет
+% установить русский язык в качестве основного, без чего
+% не будут нормально в русском переносы работать.
 \RequirePackage{polyglossia} 
 
 \RequirePackage{iftex} 
@@ -33,6 +37,9 @@
 % Я использую XeLaTeX потому что это позволяет использовать системный
 % Times New Roman
 \ifXeTeX
+    \setdefaultlanguage[spelling=modern]{russian}  %% устанавливает главный язык документа
+    \setotherlanguage{english}                     %% устанавливает второй язык документа
+
   \providecommand{\No}{\textnumero}
   \RequirePackage{xecyr} %% To silence warning about \cyr in xelatex
   % интервал между строк
