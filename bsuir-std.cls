@@ -13,16 +13,19 @@
 % Почему выбран класс eskdx?
 % Главным образом потом что он позволяет
 % - Делать секции по ГОСТ 2.105-95
-%     ( у меня были большие проблемы с секциями в ворде)
 % - Писать спецификацию
+% - Не подгружать пакет geometry, отступы уже в соответсвии с приложением Л СТП 
+%     
 % 
 % Тем не менее не стоит через него делать титульник.
 \LoadClass[a4paper,14pt]{eskdtext}
 
+\RequirePackage[numberright]{eskdplain}
 % СТП-2017 приложение Л
 \setlength{\textwidth}{165mm}
 \setlength{\textheight}{250mm}
 \pagenumbering{arabic}
+
 
 % Добавляем polyglossia, с ним же добавиться fontspec и можем
 % использовать шрифт Times New Roman в XeLaTeX
@@ -34,6 +37,9 @@
 
 % BibLaTeX нужен для библиографии
 \RequirePackage[backend=biber]{biblatex}
+
+% Чтобы более гибко настроить межстрочный интервал в списках и перечислениях
+\RequirePackage{enumitem}
 
 \RequirePackage{iftex} 
 
