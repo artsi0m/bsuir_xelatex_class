@@ -6,10 +6,18 @@
 
 % main.tex файл который компилируется и подключает за собой остальный
 % файлы с содержимым через input
+% При этом согласно моей же логике преамбула должна отстаться здесь.
+
+% Используем опцию emptystyle т.к. bsuir-std расширяет eskdxtext,
+% который без этой опции сделает рамку для чертежа даже на документе
+% с текстом.
 \documentclass[a4paper,emptystyle]{bsuir-std}
+
 \usepackage{lipsum}
 \usepackage{lastpage}
-\setmainfont{Times New Roman}
+
+% Добавляем файл с библиографией
+\addbibresource{Karakin5semCoursework.bib}
 \begin{document}
 
 %%% Титульник
@@ -23,6 +31,10 @@
 \subsection{lorem ipsum}
 \subsubsection{lorem ipsum dolor sit amet}
 \lipsum[1]
+\subsubsection{testing biblography}
 
+I doubt that there is any useful information here~\cite{wikibook}.
+
+Test test.
 
 \end{document}

@@ -32,48 +32,63 @@
 % не будут нормально в русском переносы работать.
 \RequirePackage{polyglossia} 
 
+% BibLaTeX нужен для библиографии
+\RequirePackage[backend=biber]{biblatex}
+
 \RequirePackage{iftex} 
 
 % Я использую XeLaTeX потому что это позволяет использовать системный
 % Times New Roman
 \ifXeTeX
-    \setdefaultlanguage[spelling=modern]{russian}  %% устанавливает главный язык документа
-    \setotherlanguage{english}                     %% устанавливает второй язык документа
+  %% устанавливает главный язык документа
+  \setdefaultlanguage[spelling=modern]{russian}
+  %% устанавливает второй язык документа
+  \setotherlanguage{english}
 
+  % СТП-2017 пункт 2.1.1
+  % Устанавливаем основным шрифтом системный Times new Roman
+  \setmainfont{Times New Roman}
+  % Выставляем в качестве моноширинного шрифта системный Courier
+  \setmonofont{Courier New}
   \providecommand{\No}{\textnumero}
-  \RequirePackage{xecyr} %% To silence warning about \cyr in xelatex
+
+  %% Убираем предупреждение о использовании команды \cyr из eskdx
+  \RequirePackage{xecyr} 
+
   % интервал между строк
+  % В СТП-2017 не оговорен, просто сказано в пункте 2.1.1
+  % 40 +- 3 строки на страницу
   \RequirePackage{setspace}
   \setstretch{1}
-\newsavebox\ESKDpicturebox
 
-% Support for the eskdx class in XeLaTeX
-% https://tex.stackexchange.com/a/587888
-\renewcommand{\ESKD@ShipoutPicture}{%
-     \ifESKD@twoside
-       \ifodd\c@page
-         \ESKDframeX=\ESKD@margin@si
-       \else
-         \ESKDframeX=\ESKD@margin@so
-       \fi
-     \else
-       \ESKDframeX=\ESKD@margin@si
-     \fi
-     \ESKDframeY=\ESKD@margin@b
-     \ESKDstampX=\ESKDframeX
-     \advance\ESKDstampX \ESKDframeW
-     \advance\ESKDstampX -185mm
-     \ESKDstampY=\ESKDframeY    
-     \sbox\ESKDpicturebox{%
-        \unitlength=1mm
-        \begin{picture}(0,0)(\ESKDltu{\ESKD@origin@x},\ESKDltu{\ESKD@origin@y})%
-          \ifx\ESKD@thisstyle\@empty
-            \let\ESKD@thisstyle\ESKD@curstyle
-          \fi
-          \loop
-          \ifnum \ESKD@hash@pos{@style@draw@\ESKD@thisstyle} %
-            < \ESKD@hash@count{@style@draw@\ESKD@thisstyle}
-            \ESKD@hash@next@value{@style@draw@\ESKD@thisstyle}\relax
+  \newsavebox\ESKDpicturebox
+  % Support for the eskdx class in XeLaTeX
+  % https://tex.stackexchange.com/a/587888
+  \renewcommand{\ESKD@ShipoutPicture}{%
+    \ifESKD@twoside
+      \ifodd\c@page
+        \ESKDframeX=\ESKD@margin@si
+      \else
+        \ESKDframeX=\ESKD@margin@so
+      \fi
+    \else
+      \ESKDframeX=\ESKD@margin@si
+    \fi
+    \ESKDframeY=\ESKD@margin@b
+    \ESKDstampX=\ESKDframeX
+    \advance\ESKDstampX \ESKDframeW
+    \advance\ESKDstampX -185mm
+    \ESKDstampY=\ESKDframeY    
+    \sbox\ESKDpicturebox{%
+      \unitlength=1mm
+      \begin{picture}(0,0)(\ESKDltu{\ESKD@origin@x},\ESKDltu{\ESKD@origin@y})%
+        \ifx\ESKD@thisstyle\@empty
+          \let\ESKD@thisstyle\ESKD@curstyle
+        \fi
+        \loop
+        \ifnum \ESKD@hash@pos{@style@draw@\ESKD@thisstyle} %
+          < \ESKD@hash@count{@style@draw@\ESKD@thisstyle}
+          \ESKD@hash@next@value{@style@draw@\ESKD@thisstyle}\relax
           \repeat
           \ifx\ESKD@extra@ThisHook\@empty%
             \ESKD@extra@Hook\else\ESKD@extra@ThisHook%
@@ -81,10 +96,10 @@
           \global\let\ESKD@thisstyle\@empty%
           \global\let\ESKD@extra@ThisHook\@empty%
         \end{picture}
-        }%
-       \AddToHook{shipout/foreground}{%
-         \put(1in,-1in){\usebox\ESKDpicturebox}}%
-     }
-     
+      }%
+      \AddToHook{shipout/foreground}{%
+        \put(1in,-1in){\usebox\ESKDpicturebox}}%
+    }
+    
 \fi
 
