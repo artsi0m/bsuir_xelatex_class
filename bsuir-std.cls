@@ -37,6 +37,8 @@
 
 % BibLaTeX нужен для библиографии
 \RequirePackage[backend=biber]{biblatex}
+% Эта штука рекомендуется вместе с biblatex
+\RequirePackage{csquotes}
 
 % Чтобы более гибко настроить межстрочный интервал в списках и перечислениях
 \RequirePackage{enumitem}
