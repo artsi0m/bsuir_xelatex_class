@@ -11,4 +11,4 @@ biber $document
 xelatex $file
 xelatex $file
 
-Copy-Item -Path $pdf_source -Destination $pdf_to_send
+Copy-Item -Path $pdf_source -Destination build/$pdf_to_send
