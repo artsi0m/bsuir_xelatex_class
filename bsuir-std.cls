@@ -8,7 +8,7 @@
 %%% хотя я ещё auctex не особо пользовался
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{bsuir-std}[2023/09/30 Class conforming to BSUIR standard]
+\ProvidesClass{bsuir-std}[2023/10/04 Class conforming to BSUIR standard]
 
 % Почему выбран класс eskdx?
 % Главным образом потом что он позволяет
@@ -42,6 +42,9 @@
 
 % Чтобы более гибко настроить межстрочный интервал в списках и перечислениях
 \RequirePackage{enumitem}
+
+% Картинки^W Иллюстрации
+\RequirePackage{graphicx}
 
 \RequirePackage{iftex} 
 
