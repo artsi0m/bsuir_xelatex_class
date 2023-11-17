@@ -13,8 +13,17 @@
 % с просто текстом.
 \documentclass[a4paper,emptystyle]{bsuir-std}
 
+
+% BibLaTeX нужен для библиографии
+\usepackage[backend=biber,sorting=none]{biblatex}
+% Эта штука рекомендуется вместе с biblatex
+\usepackage{csquotes}
+
+
 % Добавляем файл с библиографией
 \addbibresource{Karakin5semCoursework.bib}
+
+
 \begin{document}
 
 % Путь к месту где картинки лежат

@@ -34,17 +34,13 @@
 % установить русский язык в качестве основного, без чего
 % не будут нормально в русском переносы работать.
 \RequirePackage{polyglossia} 
-
-% BibLaTeX нужен для библиографии
-\RequirePackage[backend=biber]{biblatex}
-% Эта штука рекомендуется вместе с biblatex
-\RequirePackage{csquotes}
-
 % Чтобы более гибко настроить межстрочный интервал в списках и перечислениях
 \RequirePackage{enumitem}
 
 % Картинки^W Иллюстрации
 \RequirePackage{graphicx}
+% Подписи к картинкам.
+\RequirePackage{caption}
 
 \RequirePackage{iftex} 
 
