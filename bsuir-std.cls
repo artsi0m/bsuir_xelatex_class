@@ -35,12 +35,16 @@
 % не будут нормально в русском переносы работать.
 \RequirePackage{polyglossia} 
 % Чтобы более гибко настроить межстрочный интервал в списках и перечислениях
-\RequirePackage{enumitem}
+
+\RequirePackage{enumitem} % https://tex.stackexchange.com/a/519982
 
 % Картинки^W Иллюстрации
 \RequirePackage{graphicx}
 % Подписи к картинкам.
 \RequirePackage{caption}
+
+\RequirePackage{amsmath}
+\RequirePackage{unicode-math}
 
 \RequirePackage{iftex} 
 
@@ -61,6 +65,8 @@
 
   %% Убираем предупреждение о использовании команды \cyr из eskdx
   \RequirePackage{xecyr} 
+
+  \setmathfont{Cambria Math}
 
   % интервал между строк
   % В СТП-2017 не оговорен, просто сказано в пункте 2.1.1
