@@ -1,4 +1,13 @@
 * Note on this project
+
+** myplotlib plots
+
+*** TODO Q and t
+simple plot, where y(Q) = const  
+
+*** TODO Kw and V
+pic 4,10 rotkop
+
 ** PATH's
 *** texlive PATH on windows
 #+BEGIN_SRC: cmd
@@ -20,3 +29,6 @@ C:\Users\artsi0m\scoop\apps\miktex\23.9\texmfs\install\tex\latex\eskdx
 *** box255 
 
 https://tex.stackexchange.com/questions/587767/error-output-routine-didnt-use-all-of-box255-using-eskdx
+
+
+
