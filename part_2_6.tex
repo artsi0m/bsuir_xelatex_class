@@ -1,0 +1,130 @@
+\subsection{Расчет теплового режима РЭС при принудительном воздушном охлаждении}
+
+Для расчетов был выбран вентилятор от производитля \textit{5bites}
+\textit{FB5010S-12L3} c диаметром лопастей 45мм.
+
+\begin{enumerate}[label={\arabic*.}]
+\item Определяется средний перегрев воздуха в блоке
+\begin{equation}
+\vartheta\mathrm{_в} = 5 \cdot 10^{-4} \cdot \frac{P}{G}
+\end{equation}
+
+Здесь G – воздушный поток, а P мощность рассеиваемая элементом.
+
+$$G = 0,06377\mathrm{м^3/c}$$
+
+$$P = 20\mathrm{Вт}$$
+
+$$\vartheta\mathrm{_в} = 0,156K$$
+
+\item Определяется площадь поперечного
+  в направлении продува сечения корпуса блока $$S= L_1 \cdot L_2$$,
+  где $L_1$, $L_2$ — размеры корпуса блока,
+  перпендикулярные направлению продува.
+  $$S= L_1 \cdot L_2 =0,27\mathrm{м^2}$$
+
+\item Находится коэффициент $m_1$ в зависимости
+  от массового расхода охлаждающего воздуха ~\cite{Rotkop1976}:
+  \begin{equation}
+    m_1 = 0,001 \cdot G^{-0,5}
+    \end{equation}
+  $$m_1 = 0,0039$$
+
+\item Находится коэффициент $m_2$,
+  учитывающий величину площади поперечного
+  к направлению обдува сечения аппарата\cite{Rotkop1976}:
+  \begin{equation}
+    m_2= (L_1 \cdot L_2) ^ {-0,406}
+    \end{equation}
+
+    $$m_2 = 1,7$$
+
+  \item Находится коэффицент $m_3$,
+    учитывающий длину аппарата в направлении обдува~\cite{Rotkop1976}:
+    \begin{equation}
+      m_3 = l_3 ^ {-1,059}
+      \end{equation}
+
+      $$m_3 = 4,269$$
+
+\item Находится коэффициент $m_4$,
+   учитывающий заполнение аппарата ~\cite{Rotkop1976}:
+   \begin{equation}
+     m_4 = K\mathrm{_{з}}^{-0,42}(1-K\mathrm{_{з}})^{2/3})^{0,5}
+   \end{equation}
+   $$m_4 = 1,595$$
+  
+\item Находится перегрев охлаждающего воздуха
+  в радиоэлектронном аппарате ~\cite{Rotkop1976}:
+  \begin{equation}
+    \overline{\vartheta\mathrm{_{в}}} = 5 \cdot 10^{-4} P/G
+  \end{equation}
+  
+  $$\overline{\vartheta\mathrm{_{в}}} = 0,157K$$
+
+\item Рассчитывается перегрев нагретой зоны блока с принудительным
+
+  охлаждением ~\cite{Rotkop1976}:
+  \begin{equation}
+    \vartheta\mathrm{_{з}} = \overline{\vartheta\mathrm{_{в}}} + P m_1 m_2 m_3 m_4
+    \end{equation}
+  
+
+    $$\overline{\vartheta\mathrm{_{з}}} = 1,073 K$$
+
+\item Находится условная поверхность нагретой зоны:
+  $$S\mathrm{_{з}} = 1,308$$
+
+\item Находится удельная мощность нагретой зоны:
+  $$q\mathrm{_{з}} = 40,988$$
+
+\item Находится удельная мощность элемента:
+  $$q\mathrm{_{эл}} = 221,803$$
+
+\item Рассчитывается перегрев окружающей
+  среды у элемента ~\cite{Rotkop1976}:
+  \begin{equation}
+    \vartheta\mathrm{_{эс}}   =  \vartheta\mathrm{_{в}} (0,75 + 0,25\frac{q\mathrm{_{эл}}}{q\mathrm{_{з}}} (\frac{L}{L_{з}})
+    \end{equation}
+  
+  $$\vartheta\mathrm{_{эс}} = 0,174 K$$
+
+\item Определяется температура нагретой зоны ~\cite{Rotkop1976}:
+  \begin{equation}
+    T\mathrm{_{з}} = \vartheta\mathrm{_{з}} + T\mathrm{_{вх}}
+  \end{equation}
+
+  $$T\mathrm{_{з}} = 314,073K$$
+  
+\item Определяется средняя температура воздуха в блоке ~\cite{Rotkop1976}:
+  \begin{equation}
+    T\mathrm{_{в}} = \overline{\vartheta\mathrm{_{в}}} + T\mathrm{_{вх}}
+  \end{equation}
+  
+  $$ T\mathrm{_{в}} = 313,157K$$
+ 
+\item Определяется температура воздуха на выходе из
+  блока ~\cite{Rotkop1976}:
+  \begin{equation}
+    T\mathrm{в2} = 2\cdot \overline{\vartheta\mathrm{_{в}}} + T\mathrm{_{вх}}
+  \end{equation}
+  
+  $$ T\mathrm{в2} = 313,314K$$
+  
+\item Определяется температура поверхности элемента ~\cite{Rotkop1976}:
+  \begin{equation}
+    T\mathrm{_{эл}} = \vartheta\mathrm{_{эл}}  + T\mathrm{_{вх}}
+  \end{equation}
+  $$    T\mathrm{_{эл}} = 314,188K$$
+  
+\item Определяется температура окружающего
+  элемент воздуха ~\cite{Rotkop1976}:
+  \begin{equation}
+        T\mathrm{_{эc}} = \vartheta\mathrm{_{c}} + T\mathrm{_{вх}}
+    \end{equation}
+
+ $$    T\mathrm{_{эл}} = 313,174K$$
+
+  
+\end{enumerate}
+\newpage % Конец второй главы
