@@ -15,8 +15,7 @@ $$G = 0,06377\mathrm{м^3/c}$$
 
 $$P = 20\mathrm{Вт}$$
 
-$$\vartheta\mathrm{_в} = 0,156K$$
-
+$$\overline{\vartheta\mathrm{_в}} = 0,156K$$  
 \item Определяется площадь поперечного
   в направлении продува сечения корпуса блока $$S= L_1 \cdot L_2$$,
   где $L_1$, $L_2$ — размеры корпуса блока,
@@ -50,7 +49,7 @@ $$\vartheta\mathrm{_в} = 0,156K$$
 \item Находится коэффициент $m_4$,
    учитывающий заполнение аппарата ~\cite{Rotkop1976}:
    \begin{equation}
-     m_4 = K\mathrm{_{з}}^{-0,42}(1-K\mathrm{_{з}})^{2/3})^{0,5}
+     m_4 = K\mathrm{_{з}}^{-0,42}(1-K\mathrm{_{з}}^{2/3})^{0,5}
    \end{equation}
    $$m_4 = 1,595$$
   
@@ -73,13 +72,20 @@ $$\vartheta\mathrm{_в} = 0,156K$$
     $$\overline{\vartheta\mathrm{_{з}}} = 1,073 K$$
 
 \item Находится условная поверхность нагретой зоны:
-  $$S\mathrm{_{з}} = 1,308$$
+  $$S\mathrm{_{з}} = 0,654 \mathrm{м^3}$$
 
 \item Находится удельная мощность нагретой зоны:
-  $$q\mathrm{_{з}} = 40,988$$
+  $$q\mathrm{_{з}} = 22,1$$
 
 \item Находится удельная мощность элемента:
-  $$q\mathrm{_{эл}} = 221,803$$
+  $$q\mathrm{_{эл}} = 73,93$$
+
+\item Рассчитывается перегрев поверхности элемента ~\cite{Rotkop1976}
+    \begin{equation}
+    \vartheta\mathrm{_{эл}}   =  \vartheta\mathrm{_{з}} (0,75 + 0,25\frac{q\mathrm{_{эл}}}{q\mathrm{_{з}}} (\frac{L}{L_{3}} + 0,5)
+    \end{equation}
+
+    $$\vartheta\mathrm{_{эл}} = 5,841$$
 
 \item Рассчитывается перегрев окружающей
   среды у элемента ~\cite{Rotkop1976}:
@@ -87,7 +93,7 @@ $$\vartheta\mathrm{_в} = 0,156K$$
     \vartheta\mathrm{_{эс}}   =  \vartheta\mathrm{_{в}} (0,75 + 0,25\frac{q\mathrm{_{эл}}}{q\mathrm{_{з}}} (\frac{L}{L_{з}})
     \end{equation}
   
-  $$\vartheta\mathrm{_{эс}} = 0,174 K$$
+  $$\vartheta\mathrm{_{эс}} = 0,854 K$$
 
 \item Определяется температура нагретой зоны ~\cite{Rotkop1976}:
   \begin{equation}

@@ -18,8 +18,8 @@
   удельной мощности корпуса блока и
   удельной мощности нагретой зоны.
 
-  $$\vartheta_1=1,936$$
-  $$\vartheta_2=3,122$$
+  $$\vartheta_1=1,938$$
+  $$\vartheta_2=3,182$$
 
 
 \item Коэффициенты $K\mathrm{_{Н1}}$ и $K\mathrm{_{Н2}}$
@@ -37,7 +37,7 @@
     Здесь n — количество отверстий $n = 60$,
     d – диаметр отверстия $d = 0,00635\mathrm{м}$.
 
-    $$S = 0,00380\mathrm{м^2}$$
+    $$S = 0,0019\mathrm{м^2}$$
 
 \item Рассчитывается коэффициент перфорации
     как отношение площади перфорации к
@@ -46,7 +46,7 @@
     \mathrm{П} = S\mathrm{_п}/2 l_1 l_2
   \end{equation}
 
-  $$\mathrm{П} = 0,00981$$
+  $$\mathrm{П} = 0,00702$$
 
 \item Находится коэффициент $K\mathrm{_П}$ в зависимости от
   коэффициента перфораций:
@@ -54,39 +54,39 @@
     K\mathrm{_П} = 0,29 + \frac{1}{1,41 + 4,95}
   \end{equation}
  
-  $$K\mathrm{_П} = 0,976$$
+  $$K\mathrm{_П} = 0,982$$
 
 \item Определяется прегрев корпуса блока~\cite{Rotkop1976}:
   \begin{equation}
     \vartheta\mathrm{_К} = \vartheta_1K\mathrm{_{Н1}}K\mathrm{_П} \cdot 0,93
   \end{equation}
 
-  $$\vartheta\mathrm{_К} =1,755K$$
+  $$\vartheta\mathrm{_К} =0,012K$$
 
 \item Определяется перегрев нагретой зоны~\cite{Rotkop1976}:
   \begin{equation}
 \vartheta\mathrm{_з} = 0,93К\mathrm{_п}(\vartheta_1K\mathrm{_{Н1}} + (\vartheta_2\frac{1}{0,93} - \vartheta_1)K\mathrm{_{Н2}})
 \end{equation}
 
-$$\vartheta\mathrm{_з} = 3,039 K$$
+$$\vartheta\mathrm{_з} = 3,246 K$$
 
 \item Определяется средний перегрев воздуха вблоке~\cite{Rotkop1976}:
 \begin{equation}
 \vartheta\mathrm{_в} = \vartheta\mathrm{_з} \cdot 0,6
 \end{equation}
 
-$$\vartheta\mathrm{в} = 1,823 K$$
+$$\vartheta\mathrm{в} = 1,948 K$$
 
 
 \item Рассчитывается удельная мощность элемента,
   перегрев поверхности элемента,
   перегрев окружающей элемент среды:
 
-$$q\mathrm{_{эл}}= 221,803\mathrm{ВТ/м^2}$$
+$$q\mathrm{_{эл}}= 73,934\mathrm{ВТ/м^2}$$
 
-$$\vartheta\mathrm{_{эл}} = 7,934K$$
+$$\vartheta\mathrm{_{эл}} = 5,05K$$
 
-$$\vartheta\mathrm{_{эс}} = 5,95$$
+$$\vartheta\mathrm{_{эс}} = 3,03$$
 
 \item Находятся температуры
   корпуса блока,
@@ -96,15 +96,15 @@ $$\vartheta\mathrm{_{эс}} = 5,95$$
   окружающей элемент среды:
 
   
-$$T\mathrm{_К} = 314,755$$
+$$T\mathrm{_К} = 313,012$$
 
-$$T\mathrm{_з} = 318,346$$
+$$T\mathrm{_з} = 316,246$$
 
-$$T\mathrm{_{эл}} = 324,243$$
+$$T\mathrm{_{эл}} = 318,054$$
 
-$$T\mathrm{_{в}} = 316,208$$
+$$T\mathrm{_{в}} = 314,948$$
 
-$$T\mathrm{_{эс}} = 319,746$$
+$$T\mathrm{_{эс}} = 316,032$$
 
 
 \end{enumerate}
