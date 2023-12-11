@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="148mm"
+   viewBox="0 0 793.70081 559.37006"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="t_surface.svg"
+   inkscape:export-filename="t_surface.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.0111909"
+     inkscape:cx="473.35139"
+     inkscape:cy="239.659"
+     inkscape:window-width="2560"
+     inkscape:window-height="1348"
+     inkscape:window-x="-12"
+     inkscape:window-y="-12"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <clipPath
+       id="clip0">
+      <rect
+         x="1018"
+         y="302"
+         width="907"
+         height="519"
+         id="rect1" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       clip-path="url(#clip0)"
+       transform="matrix(0.87587761,0,0,1.0770386,-892.53191,-324.49999)"
+       id="g31">
+      <rect
+         x="1019"
+         y="303"
+         width="905"
+         height="517"
+         fill="#ffffff"
+         id="rect2" />
+      <g
+         id="g2">
+        <path
+           d="m 1136,707.019 h 762 m -762,-9.001 h 762 m -762,-10 h 762 m -762,-9 h 762 m -762,-19.001 h 762 m -762,-9 h 762 m -762,-9 h 762 m -762,-10 h 762 m -762,-18.001 h 762 m -762,-10 h 762 m -762,-9 h 762 m -762,-9.001 h 762 m -762,-19 h 762 m -762,-9 h 762 m -762,-9.001 h 762 m -762,-10 h 762 m -762,-18 h 762 m -762,-10.001 h 762 m -762,-9 h 762 m -762,-9 h 762 m -762,-19.001 h 762 m -762,-9 h 762 m -762,-10 h 762 m -762,-9 h 762 m -762,-19.001 h 762 m -762,-9 h 762 m -762,-9 h 762 M 1136,399.01 h 762"
+           stroke="#f2f2f2"
+           stroke-width="1.75"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="none"
+           id="path2" />
+      </g>
+      <g
+         id="g3">
+        <path
+           d="m 1136,670.018 h 762 m -762,-47.002 h 762 m -762,-46.001 h 762 m -762,-47.001 h 762 m -762,-47.001 h 762 m -762,-46.002 h 762 M 1136,390 h 762"
+           stroke="#d9d9d9"
+           stroke-width="1.75"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="none"
+           id="path3" />
+      </g>
+      <g
+         id="g4">
+        <path
+           d="m 1199.03,390 v 326 m 127,-326 v 326 m 127.01,-326 v 326 m 127,-326 v 326 m 128,-326 v 326 m 127.01,-326 v 326"
+           stroke="#f2f2f2"
+           stroke-width="1.75"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="none"
+           id="path4" />
+      </g>
+      <g
+         id="g5">
+        <path
+           d="m 1136,390 v 326 m 127.03,-326 v 326 m 127.01,-326 v 326 m 127,-326 v 326 m 127,-326 V 716 M 1771.05,390 V 716 M 1898,390 v 326"
+           stroke="#d9d9d9"
+           stroke-width="1.75"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="none"
+           id="path5" />
+      </g>
+      <g
+         id="g6">
+        <path
+           d="m 1179.03,414.011 h 40 V 716 h -40 z m 127,-1 h 40.01 V 716 h -40.01 z m 127.01,38.001 h 40 V 716 h -40 z m 128,-42.001 h 39 V 716 h -39 z m 127,50.001 h 40.01 V 716 h -40.01 z m 127.01,149.004 h 40 V 716 h -40 z"
+           fill="#5b9bd5"
+           id="path6" />
+      </g>
+      <g
+         id="g7">
+        <path
+           d="m 1136,716 h 762"
+           stroke="#d9d9d9"
+           stroke-width="1.75"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="none"
+           fill-rule="evenodd"
+           id="path7" />
+      </g>
+      <g
+         id="g8">
+        <text
+           fill="#404040"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1143.29,398)"
+           id="text7">354,9334096</text>
+      </g>
+      <g
+         id="g9">
+        <text
+           fill="#404040"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1270.42,397)"
+           id="text8">355,0323405</text>
+      </g>
+      <g
+         id="g10">
+        <text
+           fill="#404040"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1397.55,435)"
+           id="text9">346,9672435</text>
+      </g>
+      <g
+         id="g11">
+        <text
+           fill="#404040"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1524.69,393)"
+           id="text10">355,9194594</text>
+      </g>
+      <g
+         id="g12">
+        <text
+           fill="#404040"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1651.82,442)"
+           id="text11">345,3003638</text>
+      </g>
+      <g
+         id="g13">
+        <text
+           fill="#404040"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1778.95,592)"
+           id="text12">313,2853532</text>
+      </g>
+      <g
+         id="g14">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1084.14,722)"
+           id="text13">290</text>
+      </g>
+      <g
+         id="g15">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1084.14,676)"
+           id="text14">300</text>
+      </g>
+      <g
+         id="g16">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1084.14,629)"
+           id="text15">310</text>
+      </g>
+      <g
+         id="g17">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1084.14,583)"
+           id="text16">320</text>
+      </g>
+      <g
+         id="g18">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1084.14,536)"
+           id="text17">330</text>
+      </g>
+      <g
+         id="g19">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1084.14,489)"
+           id="text18">340</text>
+      </g>
+      <g
+         id="g20">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1084.14,443)"
+           id="text19">350</text>
+      </g>
+      <g
+         id="g21">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1084.14,396)"
+           id="text20">360</text>
+      </g>
+      <g
+         id="g22">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1193.79,750)"
+           id="text21">1</text>
+      </g>
+      <g
+         id="g23">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1320.92,750)"
+           id="text22">2</text>
+      </g>
+      <g
+         id="g24">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1448.05,750)"
+           id="text23">3</text>
+      </g>
+      <g
+         id="g25">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1575.19,750)"
+           id="text24">4</text>
+      </g>
+      <g
+         id="g26">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1702.32,750)"
+           id="text25">5</text>
+      </g>
+      <g
+         id="g27">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="21px"
+           transform="translate(1829.45,750)"
+           id="text26">6</text>
+      </g>
+      <g
+         id="g28">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="23px"
+           transform="rotate(-90,875.835,-194.835)"
+           id="text27">Температура в Кельвинах</text>
+      </g>
+      <g
+         id="g29">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="23px"
+           transform="translate(1412.42,784)"
+           id="text28">Вариант охлаждения</text>
+      </g>
+      <g
+         id="g30">
+        <text
+           fill="#595959"
+           font-family="Calibri, Calibri_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="33px"
+           transform="translate(1278.14,352)"
+           id="text29">Температура нагретой зоны</text>
+      </g>
+      <rect
+         x="1019"
+         y="303"
+         width="905"
+         height="517"
+         stroke="#d9d9d9"
+         stroke-width="1.75"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         id="rect30" />
+    </g>
+  </g>
+</svg>
