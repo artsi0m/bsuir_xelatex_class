@@ -18,7 +18,7 @@
 %     
 % 
 % Тем не менее не стоит через него делать титульник.
-\LoadClass[a4paper,14pt]{eskdtext}
+\LoadClass[a4paper,14pt,emptystyle]{eskdtext}
 
 \RequirePackage[numberright]{eskdplain}
 % СТП-2017 приложение Л
@@ -61,6 +61,8 @@
   \setmainfont{Times New Roman}
   % Выставляем в качестве моноширинного шрифта системный Courier
   \setmonofont{Courier New}
+  \newfontfamily{\cyrillicfonttt}{Courier New}
+
   \providecommand{\No}{\textnumero}
 
   %% Убираем предупреждение о использовании команды \cyr из eskdx

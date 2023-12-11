@@ -13,14 +13,15 @@
 
 $$G = 0,06377\mathrm{м^3/c}$$
 
-$$P = 20\mathrm{Вт}$$
+$$P = 0,525\mathrm{Вт}$$
 
-$$\overline{\vartheta\mathrm{_в}} = 0,156K$$  
+$$\overline{\vartheta\mathrm{_в}} = 0,00412$$
+
 \item Определяется площадь поперечного
   в направлении продува сечения корпуса блока $$S= L_1 \cdot L_2$$,
   где $L_1$, $L_2$ — размеры корпуса блока,
   перпендикулярные направлению продува.
-  $$S= L_1 \cdot L_2 =0,27\mathrm{м^2}$$
+  $$S= L_1 \cdot L_2 =0,03\mathrm{м^2}$$
 
 \item Находится коэффициент $m_1$ в зависимости
   от массового расхода охлаждающего воздуха ~\cite{Rotkop1976}:
@@ -36,7 +37,7 @@ $$\overline{\vartheta\mathrm{_в}} = 0,156K$$
     m_2= (L_1 \cdot L_2) ^ {-0,406}
     \end{equation}
 
-    $$m_2 = 1,7$$
+    $$m_2 = 10,57$$
 
   \item Находится коэффицент $m_3$,
     учитывающий длину аппарата в направлении обдува~\cite{Rotkop1976}:
@@ -44,7 +45,7 @@ $$\overline{\vartheta\mathrm{_в}} = 0,156K$$
       m_3 = l_3 ^ {-1,059}
       \end{equation}
 
-      $$m_3 = 4,269$$
+      $$m_3 = 8,021$$
 
 \item Находится коэффициент $m_4$,
    учитывающий заполнение аппарата ~\cite{Rotkop1976}:
@@ -59,7 +60,7 @@ $$\overline{\vartheta\mathrm{_в}} = 0,156K$$
     \overline{\vartheta\mathrm{_{в}}} = 5 \cdot 10^{-4} P/G
   \end{equation}
   
-  $$\overline{\vartheta\mathrm{_{в}}} = 0,157K$$
+  $$\overline{\vartheta\mathrm{_{в}}} = 0,00411K$$
 
 \item Рассчитывается перегрев нагретой зоны блока с принудительным
 
@@ -69,23 +70,23 @@ $$\overline{\vartheta\mathrm{_в}} = 0,156K$$
     \end{equation}
   
 
-    $$\overline{\vartheta\mathrm{_{з}}} = 1,073 K$$
+    $$\overline{\vartheta\mathrm{_{з}}} = 0,285 K$$
 
 \item Находится условная поверхность нагретой зоны:
-  $$S\mathrm{_{з}} = 0,654 \mathrm{м^3}$$
+  $$S\mathrm{_{з}} = 0,0308 \mathrm{м^3}$$
 
 \item Находится удельная мощность нагретой зоны:
-  $$q\mathrm{_{з}} = 22,1$$
+  $$q\mathrm{_{з}} = 420,98 \mathrm{Вт/м^2}$$
 
 \item Находится удельная мощность элемента:
-  $$q\mathrm{_{эл}} = 73,93$$
+  $$q\mathrm{_{эл}} = 1109,51$$
 
 \item Рассчитывается перегрев поверхности элемента ~\cite{Rotkop1976}
     \begin{equation}
     \vartheta\mathrm{_{эл}}   =  \vartheta\mathrm{_{з}} (0,75 + 0,25 \cdot q\mathrm{_{эл}} / q\mathrm{_{з}})(L /L_{3} + 0,5)
     \end{equation}
 
-    $$\vartheta\mathrm{_{эл}} = 5,841$$
+    $$\vartheta\mathrm{_{эл}} = 0,214$$
 
 \item Рассчитывается перегрев окружающей
   среды у элемента ~\cite{Rotkop1976}:
@@ -93,21 +94,21 @@ $$\overline{\vartheta\mathrm{_в}} = 0,156K$$
     \vartheta\mathrm{_{эс}} = \vartheta\mathrm{_{в}} (0,75 + 0,25 q\mathrm{_{эл}} / q\mathrm{_{з}}) ({L} / {L_{з}})
   \end{equation}
   
-  $$\vartheta\mathrm{_{эс}} = 0,854 K$$
+  $$\vartheta\mathrm{_{эс}} = 0,03 K$$
 
 \item Определяется температура нагретой зоны ~\cite{Rotkop1976}:
   \begin{equation}
     T\mathrm{_{з}} = \vartheta\mathrm{_{з}} + T\mathrm{_{вх}}
   \end{equation}
 
-  $$T\mathrm{_{з}} = 314,073K$$
+  $$T\mathrm{_{з}} = 313,285K$$
   
 \item Определяется средняя температура воздуха в блоке ~\cite{Rotkop1976}:
   \begin{equation}
     T\mathrm{_{в}} = \overline{\vartheta\mathrm{_{в}}} + T\mathrm{_{вх}}
   \end{equation}
   
-  $$ T\mathrm{_{в}} = 313,157K$$
+  $$ T\mathrm{_{в}} = 313,04K$$
  
 \item Определяется температура воздуха на выходе из
   блока ~\cite{Rotkop1976}:
@@ -115,13 +116,13 @@ $$\overline{\vartheta\mathrm{_в}} = 0,156K$$
     T\mathrm{в2} = 2\cdot \overline{\vartheta\mathrm{_{в}}} + T\mathrm{_{вх}}
   \end{equation}
   
-  $$ T\mathrm{в2} = 313,314K$$
+  $$ T\mathrm{в2} = 313,008K$$
   
 \item Определяется температура поверхности элемента ~\cite{Rotkop1976}:
   \begin{equation}
     T\mathrm{_{эл}} = \vartheta\mathrm{_{эл}}  + T\mathrm{_{вх}}
   \end{equation}
-  $$    T\mathrm{_{эл}} = 314,188K$$
+  $$    T\mathrm{_{эл}} = 313,214K$$
   
 \item Определяется температура окружающего
   элемент воздуха ~\cite{Rotkop1976}:
@@ -129,7 +130,7 @@ $$\overline{\vartheta\mathrm{_в}} = 0,156K$$
         T\mathrm{_{эc}} = \vartheta\mathrm{_{c}} + T\mathrm{_{вх}}
     \end{equation}
 
- $$    T\mathrm{_{эл}} = 313,174K$$
+ $$    T\mathrm{_{эл}} = 313,029K$$
 
   
 \end{enumerate}

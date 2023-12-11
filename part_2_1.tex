@@ -5,18 +5,18 @@
 \item Рассчитывается поверхность корпуса блока~\cite{Rotkop1976}:
 
   \begin{equation}
-    S\mathrm{_{К}} = 2 \cdot (l_1 l_2 + (l_1+ l_2)l_3) % (4.46)
+S\mathrm{_{К}} = 2 \cdot \left(l_1 l_2 + \left(l_1+ l_2 \right)l_3\right) % (4.46)
   \end{equation}
 
-  $$S\mathrm{_{К}}=1,108\mathrm{м^2}$$
+  $$S\mathrm{_{К}}=0,0424\mathrm{м^2}$$
 
 \item Определяется условная поверхность нагретой зоны ~\cite{Rotkop1976}:
 
   \begin{equation}
-    S\mathrm{_{з}} = 2 (l_1 l_2 + (l_1 + l_2) K\mathrm{_{з}} l_3) % (4.39)
+    S\mathrm{_{з}} = 2 \left(l_1 l_2 + \left(l_1 + l_2\right) K\mathrm{_{з}} l_3 \right) % (4.39)
   \end{equation}
 
-  $$S\mathrm{_{з}} = 0,655\mathrm{м^2}$$
+  $$S\mathrm{_{з}} = 0,03088\mathrm{м^2}$$
 
 \item Определяется удельная мощность корпуса по блоку ~\cite{Rotkop1976}:
 
@@ -24,14 +24,14 @@
   q\mathrm{_к} = P\mathrm{_з}/S\mathrm{_к} % (4.45)
 \end{equation}
 
-$$q\mathrm{_к} = 13,53\mathrm{Вт/м^2}$$
+$$q\mathrm{_к} = 306,6037\mathrm{Вт/м^2}$$
 
 \item Рассчитывается удельная мощность нагретой зоны ~\cite{Rotkop1976}:
   \begin{equation}
       q\mathrm{_з} = P\mathrm{_з}/S\mathrm{_3} % (4.38)
     \end{equation}
 
-    $$q\mathrm{_з} = 22,91 \mathrm{ Вт/м^2}$$
+    $$q\mathrm{_з} = 420,984 \mathrm{ Вт/м^2}$$
 
 \item Находится коэффициент $\vartheta_1$ в зависимости от удельной мощности корпуса блока ~\cite{Rotkop1976}:
     
@@ -39,7 +39,7 @@ $$q\mathrm{_к} = 13,53\mathrm{Вт/м^2}$$
 \vartheta_1 = 0,1472q\mathrm{_к} - 0,2962 \cdot 10^{-3}q\mathrm{_к}^2 + 0,3127 \cdot 10^{-6}q\mathrm{_к}^2
 \end{equation}
 
-$$\vartheta_1=1,938$$
+$$\vartheta_1=17,31693$$
 
 \item Находится коэффициент $\vartheta_2$ в зависимости от удельной мощности нагретой среды ~\cite{Rotkop1976}:
 
@@ -47,7 +47,7 @@ $$\vartheta_1=1,938$$
 \vartheta_2 = 0,1390q\mathrm{_к} - 0,1223 \cdot 10^{-3}q\mathrm{_к}^2 + 0,0698 \cdot 10^{-6}q\mathrm{_к}^3
 \end{equation}
 
-$$\vartheta_2=3,182$$
+$$\vartheta_2= 42,04966$$
 
 \item Коэффициент $K\mathrm{_{Н1}}$ в зависмости от давления
   среды вне корпуса блока берётся из ГОСТ~\cite{GOST-15150-69}.
@@ -64,14 +64,14 @@ $$\vartheta_2=3,182$$
     \vartheta\mathrm{_к} = \vartheta_1 \cdot K\mathrm{_{Н1}}
   \end{equation}
   
-  $$\vartheta\mathrm{_к} = 1,935 K$$
+  $$\vartheta\mathrm{_к} = 17,3 K$$
 
 \item Рассчитывается перегрев нагретой зоны ~\cite{Rotkop1976}:
     \begin{equation}
     \vartheta\mathrm{_з} = \vartheta\mathrm{_к} + (\vartheta_2 - \vartheta_1) \cdot K\mathrm{_{H2}}
     \end{equation}
 
-    $$\vartheta\mathrm{_з} = 2,4 K$$
+    $$\vartheta\mathrm{_з} = 41,93 K$$
 
   \item Определяется средний перегрев воздуха в блоке ~\cite{Rotkop1976}:
         \begin{equation}
@@ -85,53 +85,53 @@ $$\vartheta_2=3,182$$
       q\mathrm{_{эл}} = \frac{P\mathrm{_{эл}}}{S\mathrm{_{эл}}}
     \end{equation}
 
-        $$q\mathrm{_{эл}} =73,934\mathrm{ВТ/м^2} $$
+        $$q\mathrm{_{эл}} =1109,50966\mathrm{ВТ/м^2} $$
 
  \item Рассчитывается перегрев поверхности элемента ~\cite{Rotkop1976}:
  \begin{equation}
-\vartheta\mathrm{_{эл}} = \vartheta\mathrm{_{з}}(a + b \frac{q\mathrm{_{Эл}}}{q\mathrm{_{з}}})
+\vartheta\mathrm{_{эл}} = \vartheta\mathrm{_{з}} \left(a + b \frac{q\mathrm{_{Эл}}}{q\mathrm{_{з}}}\right)
 \end{equation}
 
-$$\vartheta\mathrm{_{эл}} =46,171K$$
+$$\vartheta\mathrm{_{эл}} =59,079K$$
 
 \item Рассчитывается перегрев окружающей элемент среды ~\cite{Rotkop1976}:
 
       \begin{equation}
       \vartheta\mathrm{_{эс}} = \vartheta\mathrm{_в}(0,75 + 0,25\frac{q\mathrm{_{эл}}}{q\mathrm{_{з}}})
     \end{equation}
-    $$\vartheta\mathrm{_{эс}} = 3,616K$$
+    $$\vartheta\mathrm{_{эс}} = 41,726K$$
 
   \item Определяется температура корпуса блока ~\cite{Rotkop1976}:
     \begin{equation}
       T\mathrm{_к} = \vartheta\mathrm{_{к}} + T\mathrm{_с}
     \end{equation}
-    $$T\mathrm{_{к}} = 314,935 K$$
+    $$T\mathrm{_{к}} = 330,3 K$$
     
 \item Определяется температура нагретой зоны ~\cite{Rotkop1976}:
     \begin{equation}
       T\mathrm{_з} = \vartheta\mathrm{_з} + T\mathrm{_c}
     \end{equation}
 
-    $$T\mathrm{_з} = 315,400 K$$
+    $$T\mathrm{_з} = 354,933 K$$
   \item Находится температура поверхности элемента ~\cite{Rotkop1976}:
     \begin{equation}
       T\mathrm{_{эл}} = \vartheta\mathrm{_{эл}} + T\mathrm{_c}
     \end{equation}
 
-    $$T\mathrm{_{эл}} = 359,171 K$$
+    $$T\mathrm{_{эл}} = 372,079 K$$
 
   \item Находится средняя температура воздуха в блоке ~\cite{Rotkop1976}:
     \begin{equation}
       T\mathrm{_{в}} = \vartheta\mathrm{_{в}} + T\mathrm{_c}
     \end{equation}
 
-    $$T\mathrm{_{в}} = 315,324 K$$
+    $$T\mathrm{_{в}} = 342,617 K$$
 
   \item Находится температура окружающей элемент среды ~\cite{Rotkop1976}:
     \begin{equation}
       T\mathrm{_{эс}} = \vartheta\mathrm{_{эс}} + T\mathrm{_c}
     \end{equation}
 
-    $$T\mathrm{_{эc}} = 316,616 K$$
+    $$T\mathrm{_{эc}} = 354,725 K$$
 \end{enumerate}
  

@@ -8,18 +8,18 @@
   удельная мощность корпуса блока,
   удельная мощность нагретой зоны.
 
-  $$S\mathrm{_{К}}=1,108\mathrm{м^2}$$
-  $$S\mathrm{_{з}} = 0,655 \mathrm{м^2}$$
-  $$q\mathrm{_к} = 13,53\mathrm{Вт/м^2}$$
-  $$q\mathrm{_з} = 22,91 \mathrm{ Вт/м^2}$$
+  $$S\mathrm{_{К}}=0,0424\mathrm{м^2}$$
+  $$S\mathrm{_{з}} = 0,03088 \mathrm{м^2}$$
+  $$q\mathrm{_к} = 306,6\mathrm{Вт/м^2}$$
+  $$q\mathrm{_з} = 420,98 \mathrm{ Вт/м^2}$$
 
 \item Находятся коэффициенты $\vartheta_1$ и
   $\vartheta_2$ в зависимости от
   удельной мощности корпуса блока и
   удельной мощности нагретой зоны.
 
-  $$\vartheta_1=1,938$$
-  $$\vartheta_2=3,182$$
+  $$\vartheta_1=17,31$$
+  $$\vartheta_2=42,05$$
 
 
 \item Коэффициенты $K\mathrm{_{Н1}}$ и $K\mathrm{_{Н2}}$
@@ -46,47 +46,47 @@
     \mathrm{П} = S\mathrm{_п}/2 l_1 l_2
   \end{equation}
 
-  $$\mathrm{П} = 0,00702$$
+  $$\mathrm{П} = 0,1357$$
 
 \item Находится коэффициент $K\mathrm{_П}$ в зависимости от
   коэффициента перфораций:
   \begin{equation}
-    K\mathrm{_П} = 0,29 + \frac{1}{1,41 + 4,95}
+    K\mathrm{_П} = 0,29 + \frac{1}{1,41 + 4,95 \cdot \mathrm{П}}
   \end{equation}
  
-  $$K\mathrm{_П} = 0,982$$
+  $$K\mathrm{_П} = 0,77$$
 
 \item Определяется прегрев корпуса блока~\cite{Rotkop1976}:
   \begin{equation}
     \vartheta\mathrm{_К} = \vartheta_1K\mathrm{_{Н1}}K\mathrm{_П} \cdot 0,93
   \end{equation}
 
-  $$\vartheta\mathrm{_К} =0,012K$$
+  $$\vartheta\mathrm{_К} =2,183K$$
 
 \item Определяется перегрев нагретой зоны~\cite{Rotkop1976}:
   \begin{equation}
 \vartheta\mathrm{_з} = 0,93К\mathrm{_п}(\vartheta_1K\mathrm{_{Н1}} + (\vartheta_2\frac{1}{0,93} - \vartheta_1)K\mathrm{_{Н2}})
 \end{equation}
 
-$$\vartheta\mathrm{_з} = 3,246 K$$
+$$\vartheta\mathrm{_з} = 32,3 K$$
 
 \item Определяется средний перегрев воздуха вблоке~\cite{Rotkop1976}:
 \begin{equation}
 \vartheta\mathrm{_в} = \vartheta\mathrm{_з} \cdot 0,6
 \end{equation}
 
-$$\vartheta\mathrm{в} = 1,948 K$$
+$$\vartheta\mathrm{в} = 19,38 K$$
 
 
 \item Рассчитывается удельная мощность элемента,
   перегрев поверхности элемента,
   перегрев окружающей элемент среды:
 
-$$q\mathrm{_{эл}}= 73,934\mathrm{ВТ/м^2}$$
+$$q\mathrm{_{эл}}= 1109,51\mathrm{ВТ/м^2}$$
 
-$$\vartheta\mathrm{_{эл}} = 5,05K$$
+$$\vartheta\mathrm{_{эл}} = 45,50K$$
 
-$$\vartheta\mathrm{_{эс}} = 3,03$$
+$$\vartheta\mathrm{_{эс}} = 27,3$$
 
 \item Находятся температуры
   корпуса блока,
@@ -96,15 +96,15 @@ $$\vartheta\mathrm{_{эс}} = 3,03$$
   окружающей элемент среды:
 
   
-$$T\mathrm{_К} = 313,012$$
+$$T\mathrm{_К} = 315,183K$$
 
-$$T\mathrm{_з} = 316,246$$
+$$T\mathrm{_з} = 345,3K$$
 
-$$T\mathrm{_{эл}} = 318,054$$
+$$T\mathrm{_{эл}} = 332,38K$$
 
-$$T\mathrm{_{в}} = 314,948$$
+$$T\mathrm{_{в}} = 358,507K$$
 
-$$T\mathrm{_{эс}} = 316,032$$
+$$T\mathrm{_{эс}} = 340,304K$$
 
 
 \end{enumerate}
