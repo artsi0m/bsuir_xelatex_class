@@ -12,8 +12,8 @@ rm ${document}.aux
 
 xelatex $file
 
-test $? == 0 && bibtex8 -B $document
-# test $? == 0 && biber $document
+
+test $? == 0 && biber $document
 
 #test $? == 0 && python -m bibulous ${document}.aux
 test $? == 0 && xelatex $file
